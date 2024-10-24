@@ -1,5 +1,21 @@
 # React + Vite
 
+Navigate to the frontend folder:
+cd assignment
+
+
+Run the Vite development server:
+
+npm run dev
+
+Navigate to the backend folder:
+
+cd backend
+
+
+
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

@@ -16,10 +16,12 @@ const userSlice = createSlice({
     addUser: (state, action) => {
       state.users.push(action.payload);
     },
+    // In your userSlice.js file
     updateUser: (state, action) => {
-      const index = state.users.findIndex(user => user.id === action.payload.id);
+      const updatedUser = action.payload;
+      const index = state.users.findIndex(user => user._id === updatedUser._id);
       if (index !== -1) {
-        state.users[index] = action.payload;
+        state.users[index] = updatedUser;
       }
     },
     deleteUser: (state, action) => {
